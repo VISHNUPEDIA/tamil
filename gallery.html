@@ -1,0 +1,485 @@
+
+<html>
+<head>
+<title>விஷ்ணுபீடியா</title>
+
+<meta charset="UTF-8">
+<meta property="og:title" content="விஷ்ணுபீடியா">
+<meta property="og:description" content="விஷ்ணுவின் சிறு வாழ்க்கை வரலாறு">
+<meta property="og:image" content="LOGO\VISHNUPEDIA1.jpg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta property="og:url" content="https://vishnupedia.github.io/tamil/">
+<meta property="og:type" content="https://vishnupedia.github.io/tamil/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+
+<link rel="icon" href="LOGO\FAVICON.ico" type="image/x-icon">
+
+
+<style>
+
+/*BODY__________________________*/
+html, body {margin: 0; padding: 0; width: 100%; max-width: 100%; min-width: 100%; height: 100%; box-sizing: border-box; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-drag: none; -moz-user-drag: none; -o-user-drag: none; user-drag: none;}
+
+@media (max-width: 950px) 
+{
+html, body { margin: 0; padding: 0; width: 100%; max-width: 100%; min-width: 100%; height: 100%;  overflow-x: hidden;}
+}
+
+
+
+
+
+
+/*MENUBAR + MENUBAR IMAGES________________________*/
+nav ul.menu {list-style-type: none; display: flex; margin: 0; padding: 0; }
+nav ul.menu li { margin: 0 30px; text-align: center; margin-top: 20px; margin-bottom: 20px ;}
+nav ul.menu li a {text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); text-decoration: none; font-size: 20px; color: #ffffff; display: block;}
+nav ul.menu li img { display: block; margin: 0 auto 5px; height: 40px; width: 40px; object-fit: cover; transition: transform 1.5s ease;}
+.menu li a:hover img {transform: rotate(360deg);}
+header { display: flex; align-items: center; padding: 10px 0; background-color: #2b2a2a; background: linear-gradient(#ff3131, #444444); position: fixed; top: 0; width: 100%; height: 50px; z-index: 1000;}
+.logo {margin-right: auto;}
+.logo img {height: 70px; margin: 3px;}
+
+@media (max-width: 950px) 
+{
+header {height: 20px; padding: 10px;}
+.logo img {height: 30px; width: auto; margin: 0px;}
+nav ul.menu {padding: 2px;}
+nav ul.menu li {margin: 5px;}
+span {font-size: 6px; padding: 5px;}
+nav ul.menu li img {height: 25px; width: 25px;}
+}
+
+
+
+
+
+
+/*HEADER + HEADERIMAGES__________________________*/
+.header-images { display: flex; justify-content: center; padding-top: 65px; }
+.header-images img { max-width: 850px; height: 550px; margin: 20px; }
+.header-images {background-image: url('LOGO/BACKGROUND4.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: auto; min-height: 200px;}
+
+@media (max-width: 950px) 
+{
+.header-images {padding-top: 40px; background-image:none; background: linear-gradient(#66ff3c, #ffffff);}
+.header-images .HIMG {max-width: 350px; height: 200px; display: block; }
+}
+
+
+
+
+/*TABS___________________________________*/
+.tabcontainer {display: flex; justify-content: center; position: -webkit-sticky; position: sticky; top: 20px; z-index: 999; background-color: #ffffff;}
+.tablink {text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif; -webkit-text-stroke: 0.3px #ffffff; font-size: 20px; background-color: #737373; color: white; align-items: center; border: white; outline: none; cursor: pointer; padding: 5px; margin: 5px; border-radius: 10px; white-space: nowrap;  box-sizing: border-box; width:50%; display: inline-block; text-align: center; }
+.tabcontent {display: flex; padding: 20px; white-space: normal; flex-wrap: wrap; }
+.tablink-full {background-color: #da53ff;}
+.tablink-part {background-color: #ff4cba;}   
+.BUTTON {padding-bottom: 5px;}     
+
+@media (max-width: 950px) 
+{
+.tablink {font-family:'Times New Roman', Times, serif; padding: 5px; font-size: 10px; width: auto; margin: 1px; flex-grow: 1; }
+.tabcontainer {top: 5px; width: 100%; display: flex; justify-content: center; position: sticky;  z-index: 999; background-color: #ffffff;}
+}
+
+
+@media (max-width: 950px) 
+{
+.BUTTON {max-width:25px; max-height:25px; padding-bottom: 5px;}
+.TABICON {max-width: 50px; max-height: 50px;}
+}
+
+
+
+
+
+/*FOOTER_____________________________________*/
+footer {padding: 20px; color: #444444;}
+#footer-layer-1 {background-color: #444444; }
+#footer-layer-2 {background-color: #444444;}
+#footer-layer-3 {background-color: #444444;}
+.footer-content { display: flex;  justify-content: space-between; align-items: center; width: 100%;}
+.left-content, .right-content { flex: 1; padding-top: 0px;}
+.left-content { margin-right: 50px;}
+.right-content { margin-left: 50px;}
+.center-content { flex: 2; padding-left: 20px; padding-right: 20px; }
+.FLOGOIMG { background: linear-gradient( #ff0000, #1d0b0b, #ff6100);}
+
+@media (max-width: 950px) 
+{
+.footer-content {display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: center;}
+.center-content, .left-content, .right-content {width: 100%; margin: 0 0 50px 0; padding-left: 0; padding-right: 0; align-items: center; justify-content: center;}
+.center-content {order: 1;}
+.left-content {order: 2;}
+.right-content {order: 3; margin-bottom: 0; }
+.left-content li {list-style-type: none; width: 100%; align-items: center; text-align: center; }
+.right-content li {  align-items: left; text-align: left;  justify-content: flex-start;}
+}
+
+@media (max-width: 950px) 
+{
+.FLOGOIMG {width: 300px; height: 150px; background: linear-gradient( #ff0000, #1d0b0b, #ff6100);}
+}
+
+
+
+
+/*CONNECT + CONNECT IMAGES_____________________*/
+.connect li { margin: 0 15px; text-align: center;}
+.connect li img { display: block; margin: 0 auto 5px; object-fit: cover; transition: transform 1s ease;}
+.connect li a:hover img {transform: rotate(360deg)}
+.img{max-height: fit-content; max-width: fit-content; position:fixed; }
+p9 { font-size: 20px; color: #ffffff; margin: 0;}
+.h6 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 23px; color: #ffffff; margin: 0; font-weight: bold;}
+
+@media (max-width: 950px) 
+{
+.connect li img {max-width: 30px; max-height: 30px;}
+}
+@media (max-width: 950px) 
+{
+.h6 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 15px; color: #ffffff; margin: 0; font-weight: bold;}
+p9 { font-size: 12px; color: #ffffff; margin: 0;}
+}
+
+
+
+
+
+/*TAMIL QUOTE_________________________________________*/
+.p10 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 30px; color: #ffffff; margin: 0; line-height: 2.5;}
+
+@media (max-width: 950px) 
+{
+.p10 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 15px; color: #ffffff; margin: 0; line-height: 2.5;}
+}
+
+
+
+
+
+/*COPYRIGHT_________________________________________*/
+.p4 {font-size: 20px; font-weight: bold; font-family: 'Times New Roman', Times, serif; color: #ffffff; line-height: 2.0;}
+.feedback-button { display: inline-block; letter-spacing: 1.5px; font-weight: bolder; padding: 10px 20px; font-size: 16px; color: #000000; background-color: #ffffff; text-align: center; text-decoration: none; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s, box-shadow 0.3s;}
+.feedback-button:hover { color: #ffffff; background-color: #ff0000; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);}
+.feedback-button:focus {outline: none;}
+
+@media (max-width: 950px) 
+{
+.p4 {font-size: 10px;  font-family: 'Times New Roman', Times, serif; color: #ffffff; line-height: 2.0;}
+.feedback-button {font-size: 8px;}
+}
+
+
+
+
+/*GALLERY______________________________*/
+
+.gallery { justify-content: center; align-items: center; display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;}
+.gallery-item {width: 250px; height: 250px; object-fit:contain; cursor: pointer; transition: transform 0.3s ease;}
+.gallery-item:hover {transform: scale(1.05);}
+.popup {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; z-index: 1000; overflow: hidden; }
+.popup-content {position: relative; width: 90%; height: 90%; display: flex; justify-content: center; align-items: center; }
+.popup-img { max-width: 100%; max-height: 100%; object-fit: contain;  cursor: pointer;}
+.close-btn { position: absolute; top: 10px; font-weight: bolder; letter-spacing: 2px; right: 20px; font-size: 20px; color: #fff;  background: #f00; cursor: pointer; transition: color 0.3s ease;}
+.close-btn:hover {color: #f00; background: #fff;}
+
+@media (max-width: 950px) 
+{
+.gallery { gap: 10px; padding: 10px; }
+.gallery-item { width: 75px; height: 75px; }
+.popup-content { width: 95%;  height: 95%; }
+.close-btn { font-size: 18px; right: 10px; }
+}
+
+
+
+
+/*HEADINGS AND PARAGRAPHS__________________________________*/
+.h11 { background: linear-gradient( #ff3131, #444444, #ff3131); text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 45px; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif;  color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px;}
+.h12 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 45px; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif; background-color: #ff4cba; color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px;}
+
+
+@media (max-width: 950px) 
+{
+.h11 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 18px; font-family: 'Times New Roman', Times, serif; display: inline-block; padding: 5px;}
+.h12 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 18px; font-family: 'Times New Roman', Times, serif; display: inline-block; padding: 5px;}
+}
+
+        
+
+
+
+</style>
+
+
+</head>
+
+<body oncontextmenu="return false">
+    
+  
+<header>
+
+<div class="logo">
+<img src="TAMILLOGOS/VISHNUPEDIA.jpg" alt="Logo" draggable="false" >
+</div>
+
+<nav>
+<ul class="menu">
+<li> <a href="index.html"> <img src="MENU ICONS\ABOUT.gif" alt="ABOUT" draggable="false" > <span><b>அறிமுகம்</b></span></a> </li>
+&nbsp;
+<li> <a href="knowledge.html"> <img src="MENU ICONS\KNOWLEDGE.gif" alt="KNOWLEDGE" draggable="false" > <span><b>அறிவும் &nbsp; திறனும்</b></span></a> </li>
+&nbsp;
+<li> <a href="career.html"> <img src="MENU ICONS\CAREER.gif" alt="CAREER" draggable="false" > <span><b>அனுபவம்</b></span></a> </li>
+&nbsp;
+<li> <a href=" "> <img src="MENU ICONS\GALLERY.gif" alt="GALLERY" draggable="false" > <span><b>புகைப்படங்கள்</b></span></a> </li>        
+</ul>
+</nav>
+
+</header>
+
+
+
+<main>
+
+<div class="header-images">
+<img class="HIMG" src="TAMILLOGOS/RVKTAMIL.gif" draggable="false">
+
+</div>
+
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;<img class="TABICON" src="TABS\GALLERYCHILD.png" draggable="false" width="140px" height="140px" style="float: left;"> <img class="TABICON" src="TABS\GALLERYADULT.png" draggable="false" width="140px" height="140px" style="float: right;">&nbsp;&nbsp;&nbsp;<br><br><br>
+&nbsp;&nbsp;<center><h class="h11"><b>என் &nbsp;புகைப்படங்கள்</b></h></center>&nbsp;&nbsp;
+  
+<br>
+<br>
+<br>
+<br>
+
+<div class="gallery">
+    <img src="VISHNUPIC1\1.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\2.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\3.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\4.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\19.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\20.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\21.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\5.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\6.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\7.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\8.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\9.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\10.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\11.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\12.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\13.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\14.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\15.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\16.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\17.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\18.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\19.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\20.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\21.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\22.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\23.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\24.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\25.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\26.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\27.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\28.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\29.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\30.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\31.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC1\32.jpeg"  draggable="false" class="gallery-item">
+
+
+    <img src="VISHNUPIC2\1.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\2.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\3.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\4.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\5.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\6.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\7.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\8.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\9.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\10.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\11.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\12.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\13.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\14.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\15.jpeg"  draggable="false" class="gallery-item">
+    <img src="VISHNUPIC2\16.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\17.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\18.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\19.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\20.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\21.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\22.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\23.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\24.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\25.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\26.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\27.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\28.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\29.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\30.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\31.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\32.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\33.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\34.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2\35.jpg" draggable="false"  class="gallery-item">
+    
+    <img src="VISHNUPIC3\1.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\2.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\3.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\4.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\5.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\6.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\7.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\8.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\9.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\10.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\11.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\12.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\13.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\14.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\15.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\16.jpeg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\17.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3\18.jpg" draggable="false"  class="gallery-item">
+    
+</div> 
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-btn" class="close-btn"><center>&nbsp; CLOSE &nbsp;</center> </span>
+            <img id="popup-img" class="popup-img" src="" alt="Full View">
+        </div>
+    </div>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+</main>
+
+<footer id="footer-layer-1">
+
+
+<div class="footer-content">
+        
+<div class="left-content">
+<br>
+<h class="h6"> என்னை &nbsp;தொடர்புகொள்ளவும்</h>   
+<br><br>
+<p9>
+<ul>
+<li>படைப்பு அல்லது அலங்கார ஒப்பந்தங்களுக்கு</li>
+&nbsp;
+<li>அறிவைப் பெறுவதற்கு </li>
+&nbsp;
+<li>இயற்கை பயணத்திற்கு</li>
+&nbsp;
+<li>ஒரு கோப்பை தேநீர் அல்லது காப்பி குடிப்பதற்கு </li>
+&nbsp;
+<li>பிற சுவாரஸ்யமான விஷயங்களுக்கு  </li>
+
+</ul>
+</p9>
+</div>        
+
+<div class="center-content">
+<center><img class="FLOGOIMG" src="LOGO\VISHNUPEDIA LOGO.png" draggable="false" width="500" height="250" style="box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.5); display: block;"/></center>
+</div>
+
+<div class="right-content">  
+
+<center><h class="h6"><b>தொடர்புக்கு</b></h></center>
+<center>
+<br>
+<ul class="Connect">
+<li style="display: inline-block; margin-right: 10px;"> <a href="mailto:vishnupedia1999@gmail.com"> <img class="CONIMG" src="SOCIAL MEDIA\MAIL.gif" width="75" height="75" alt="EMAIL"> </a> </li>
+&nbsp;
+<li style="display: inline-block; margin-right: 10px;"> <a href="https://www.linkedin.com/in/rvkadventurer1221/"> <img class="CONIMG" src="SOCIAL MEDIA\LINKEDIN.gif" width="75" height="75" alt="LINKEDIN"> </a> </li>
+&nbsp;
+<li style="display: inline-block; margin-right: 10px;"> <a href="https://www.instagram.com/rvk_cyclist_adventurer_lovedog/?hl=en"> <img class="CONIMG" src="SOCIAL MEDIA\INSTAGRAM.gif" width="75" height="75" alt="INSTAGRAM"> </a> </li>
+&nbsp;
+<li style="display: inline-block; margin-right: 10px;"> <a href="https://m.facebook.com/profile.php?eav=AfaXkPNZkofAnD_7vEQzmJkzrhno69WrpxTdpJslfbg7rVHL2r0tpUcAbvwDhDP5hf8&paipv=0"> <img class="CONIMG" src="SOCIAL MEDIA\FACEBOOK.gif" width="75" height="75" alt="FACEBOOK"> </a> </li>
+</ul>
+</center>
+</div>
+</div>
+</footer> 
+
+<footer id="footer-layer-2">
+<br>
+<br>
+<br>    
+<center><p class="p10" lang="ta"><b>“ &nbsp;நீங்கள் &nbsp;கற்றுக்கொள்ளும் &nbsp;மற்றும் &nbsp;பிறருக்கு &nbsp;கற்பிக்கும் &nbsp;ஒரு &nbsp;கலையின் &nbsp;உன்னதத்தை &nbsp;எப்போது &nbsp;பெறுவீர்கள் &nbsp;எனில், &nbsp;அதன் &nbsp;மூலம் &nbsp;பெறும் &nbsp;மகிழ்ச்சியையும் &nbsp;அது &nbsp;மற்றவர்களுக்கு &nbsp;எப்படி &nbsp;உதவுகிறது &nbsp;என்பதையும் &nbsp;நீங்கள் &nbsp;உணரும் &nbsp;பொழுது &nbsp;தான்
+<br><br> அதன் &nbsp;மூலம் &nbsp;பெறும் &nbsp;பணம் &nbsp;அல்லது &nbsp;அதற்குச் &nbsp;நிகரான &nbsp;விசயத்தை &nbsp;பெறும் &nbsp;பொழுது &nbsp;அல்ல  &nbsp;”</b></p10></center>
+<br>
+<br>    
+<br>
+</footer>
+
+<footer id="footer-layer-3">
+<center><p class="p4"> காப்புரிமை &copy; விஷ்ணுபீடியா, 1999 முதல் <br> அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை  </p>
+<br>
+<br>
+<a href="https://forms.office.com/r/SjdtjtEmj7" class="feedback-button">கருத்து படிவம்</a>
+</center>
+</footer>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const galleryItems = document.querySelectorAll('.gallery-item');
+const popup = document.getElementById('popup');
+const popupImg = document.getElementById('popup-img');
+const closeBtn = document.getElementById('close-btn');
+
+galleryItems.forEach(item => {
+item.addEventListener('click', () => {
+popupImg.src = item.src;
+popup.style.display = 'flex';
+document.body.style.overflow = 'hidden'; // Prevent background scroll
+});
+});
+
+closeBtn.addEventListener('click', () => {
+popup.style.display = 'none';
+document.body.style.overflow = ''; // Restore background scroll
+});
+
+popup.addEventListener('click', (e) => {
+if (e.target === popup) {
+popup.style.display = 'none';
+document.body.style.overflow = ''; // Restore background scroll
+}
+});
+});
+</script>
+  
+
+
+
+
+</body>
+
+</html>
