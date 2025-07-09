@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://vishnupedia.github.io/tamil/">
 <meta property="og:type" content="website">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="keywords" content="Raj Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா, Personal Portfolio, Biography, Coimbatore, Tamilan, Vishnu Kumar, YouTuber"> 
 
 <link rel="apple-touch-icon" sizes="180x180" href="LOGO/FAVICON.png">
 <link rel="icon" href="LOGO/FAVICON.ico" type="image/x-icon">
@@ -90,6 +91,20 @@ nav ul.menu li img {height: 25px; width: 25px;}
 {
 .BUTTON {max-width:25px; max-height:25px; padding-bottom: 5px;}
 .TABICON {max-width: 50px; max-height: 50px;}
+}
+
+
+
+/*SUB-TABS___________________________________*/
+.subtabs { margin-top: 5px; margin-bottom: 5px;}
+.subtablink {   background-color: #404040; color: white; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif; border: none; outline: none; cursor: pointer; padding: 10px 16px; font-size: 30px; font-weight: bold; margin: 0 5px; border-radius: 5px; box-shadow: 1px 1px 5px rgba(0,0,0,0.1); transition: 0.3s; }
+.subtablink:hover { background-color: #d80000;}
+.subtablink.active { background-color: #ff3030; color: white; }
+.subtabcontent { display: none;}
+
+@media (max-width: 950px) 
+{
+.subtablink {   background-color: #404040; color: white; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif; border: none; outline: none; cursor: pointer; padding: 3px 3px; font-size: 15px; font-weight: bold; margin: 2px 2px; border-radius: 2px; }
 }
 
 
@@ -196,15 +211,32 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 }
 
 
+/*GALLERY VIDEOS______________________________*/
 
-
-/*HEADINGS AND PARAGRAPHS__________________________________*/
-.h11 { background: linear-gradient( #ff3131, #444444, #ff3131); text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 45px; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif;  color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px;}
-.h12 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 45px; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif; background-color: #ff4cba; color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px;}
+.gallery-v { justify-content: center; align-items: center; display: flex; flex-wrap: wrap; gap: 20px; }
+.gallery-video {width: 420px; height: 320px; border: none; cursor: pointer; transition: transform 0.3s ease; background: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px;}
+.gallery-video-s {width: 190px; height: 320px; border: none; cursor: pointer; transition: transform 0.3s ease; background: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px;}
+.gallery-video:hover {transform: scale(1.07);}
+.gallery-video-s:hover {transform: scale(1.07);} 
 
 
 @media (max-width: 950px) 
 {
+.gallery-v { gap: 10px; padding: 10px; }
+.gallery-video { width: 100%; height: 100%; }
+
+}
+
+
+/*HEADINGS AND PARAGRAPHS__________________________________*/
+.h4 { font-weight: bold; font-size: 45px; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif; background-color: #ff3030; color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px; -webkit-text-stroke: 1px #ffffff; color: #ffffff; }
+.h11 { background: linear-gradient( #ff3131, #444444, #ff3131); text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 45px; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif;  color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px;}
+.h12 { text-shadow: 2px 2px 10px #00000080; font-size: 45px; font-family: "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif; background-color: #ff4cba; color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px;}
+
+
+@media (max-width: 950px) 
+{
+.h4 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); text-transform: uppercase; font-size: 17px; font-family: 'Times New Roman', Times, serif; background-color: #ff3030; color: white; -webkit-text-stroke: 1px #ffffff;  display: inline-block; padding: 5px; -webkit-text-stroke: 1px #ffffff; color: #ffffff; }
 .h11 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 18px; font-family: 'Times New Roman', Times, serif; display: inline-block; padding: 5px;}
 .h12 { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); font-size: 18px; font-family: 'Times New Roman', Times, serif; display: inline-block; padding: 5px;}
 }
@@ -225,6 +257,7 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
   gtag('config', 'G-Q32X39Q8MC');
 </script>
         
+        
 </head>
 
 <body oncontextmenu="return false">
@@ -233,18 +266,18 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 <header>
 
 <div class="logo">
-<img src="TAMILLOGOS/VISHNUPEDIA.jpg" alt="Logo" draggable="false" >
+<img src="TAMILLOGOS/VISHNUPEDIA.jpg" alt="Logo" draggable="false">
 </div>
 
 <nav>
 <ul class="menu">
-<li> <a href="index.html"> <img src="MENU ICONS/ABOUT.gif" alt="ABOUT" draggable="false" > <span><b>அறிமுகம்</b></span></a> </li>
+<li> <a href="index.html"> <img src="MENU ICONS/ABOUT.gif" alt="ABOUT" draggable="false"> <span><b>அறிமுகம்</b></span></a> </li>
 &nbsp;
-<li> <a href="knowledge.html"> <img src="MENU ICONS/KNOWLEDGE.gif" alt="KNOWLEDGE" draggable="false" > <span><b>அறிவும் &nbsp; திறனும்</b></span></a> </li>
+<li> <a href="knowledge.html"> <img src="MENU ICONS/KNOWLEDGE.gif" alt="KNOWLEDGE" draggable="false"> <span><b>அறிவும் &nbsp; திறனும்</b></span></a> </li>
 &nbsp;
-<li> <a href="career.html"> <img src="MENU ICONS/CAREER.gif" alt="CAREER" draggable="false" > <span><b>அனுபவம்</b></span></a> </li>
+<li> <a href="career.html"> <img src="MENU ICONS/CAREER.gif" alt="CAREER" draggable="false"> <span><b>அனுபவம்</b></span></a> </li>
 &nbsp;
-<li> <a href=" "> <img src="MENU ICONS/GALLERY.gif" alt="GALLERY" draggable="false" > <span><b>புகைப்படங்கள்</b></span></a> </li>        
+<li> <a href=" "> <img src="MENU ICONS/GALLERY.gif" alt="GALLERY" draggable="false"> <span><b>புகைப்படங்கள்</b></span></a> </li>        
 </ul>
 </nav>
 
@@ -255,15 +288,19 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 <main>
 
 <div class="header-images">
-<img class="HIMG" src="TAMILLOGOS/RVKTAMIL.gif" draggable="false">
-
+<img class="HIMG" src="TAMILLOGOS/RVKTAMIL.gif" alt="RVK, Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, Vishnu Kumar, விஷ்ணு குமார், விஷ்ணுபீடியா" style="filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));" draggable="false">
 </div>
 
+<div class="tabcontainer">
+    <button id="defaultOpen" class="tablink tablink-photos" onclick="openPage('PHOTOS', this)"><b><img class="BUTTON" src="TABBUTTONICONS/IMAGES.gif" width="40px" height="40px" draggable="false" > <br> புகைப்படங்கள்</b></button>
+    <button class="tablink tablink-videos" onclick="openPage('VIDEOS', this)"><img class="BUTTON" src="TABBUTTONICONS/VIDEOS.gif" width="40px" height="40px" draggable="false" > <br>  <b>காணொளிகள்</b></button>
+</div>
 <br>
 <br>
+<div id="PHOTOS" class="tabcontent">
+&nbsp;&nbsp;&nbsp;<img class="TABICON" src="TABS/IMAGES.gif" draggable="false" width="140px" height="140px" style="float: left;"> <img class="TABICON" src="TABS/IMAGES.gif" draggable="false" width="140px" height="140px" style="float: right; transform: rotateY(180deg);">&nbsp;&nbsp;&nbsp;<br><br><br>
 
-&nbsp;&nbsp;&nbsp;<img class="TABICON" src="TABS/GALLERYCHILD.png" draggable="false" width="140px" height="140px" style="float: left;"> <img class="TABICON" src="TABS/GALLERYADULT.png" draggable="false" width="140px" height="140px" style="float: right;">&nbsp;&nbsp;&nbsp;<br><br><br>
-&nbsp;&nbsp;<center><h class="h11"><b>என் &nbsp;புகைப்படங்கள்</b></h></center>&nbsp;&nbsp;
+&nbsp;&nbsp;<center><h class="h11"><b>&nbsp;என் &nbsp;புகைப்படங்கள்&nbsp;</b></h></center>&nbsp;&nbsp;
   
 <br>
 <br>
@@ -271,113 +308,223 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 <br>
 
 <div class="gallery">
-    <img src="VISHNUPIC1/1.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/2.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/3.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/4.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/19.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/20.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/21.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/5.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/6.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/7.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/8.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/9.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/10.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/11.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/12.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/13.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/14.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/16.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/17.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/18.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/19.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/20.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/21.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/22.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/23.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/24.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/25.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/26.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/27.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/28.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/29.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/30.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/31.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC1/32.jpeg"  draggable="false" class="gallery-item">
+    <img src="VISHNUPIC1/1.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"   class="gallery-item">
+    <img src="VISHNUPIC1/2.jpg" draggable="false"  alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/3.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா" class="gallery-item">
+    <img src="VISHNUPIC1/4.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/19.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/20.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா" class="gallery-item">
+    <img src="VISHNUPIC3/21.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/5.jpg" draggable="false"  alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"   class="gallery-item">
+    <img src="VISHNUPIC1/6.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"   class="gallery-item">
+    <img src="VISHNUPIC1/7.jpg" draggable="false"  alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"   class="gallery-item">
+    <img src="VISHNUPIC1/8.jpg" draggable="false"  alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"   class="gallery-item">
+    <img src="VISHNUPIC1/9.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/10.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"   class="gallery-item">
+    <img src="VISHNUPIC1/11.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/12.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/13.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/14.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/16.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/17.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/18.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/19.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/20.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/21.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/22.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/23.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/24.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/25.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/26.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/27.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/28.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/29.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/30.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/31.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC1/32.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
 
 
-    <img src="VISHNUPIC2/1.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/2.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/3.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/4.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/5.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/6.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/7.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/8.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/9.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/10.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/11.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/12.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/13.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/14.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/15.jpeg"  draggable="false" class="gallery-item">
-    <img src="VISHNUPIC2/16.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/17.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/18.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/19.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/20.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/21.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/22.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/23.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/24.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/25.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/26.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/27.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/28.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/29.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/30.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/31.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/32.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/33.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/34.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC2/35.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC2/1.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/2.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/3.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/4.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/5.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/6.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/7.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/8.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/9.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/10.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/11.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/12.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/13.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/14.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/15.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/16.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/17.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/18.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/19.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/20.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/21.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/22.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/23.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/24.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/25.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/26.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/27.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/28.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/29.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/30.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/31.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/32.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/33.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/34.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC2/35.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
     
-    <img src="VISHNUPIC3/1.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/2.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/3.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/4.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/5.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/6.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/7.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/8.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/9.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/10.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/11.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/12.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/13.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/14.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/15.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/16.jpeg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/17.jpg" draggable="false"  class="gallery-item">
-    <img src="VISHNUPIC3/18.jpg" draggable="false"  class="gallery-item">
+    <img src="VISHNUPIC3/1.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/2.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/3.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/4.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/5.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/6.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/7.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/8.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/9.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/10.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/11.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/12.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/13.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/14.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/15.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/16.jpeg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/17.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
+    <img src="VISHNUPIC3/18.jpg" draggable="false" alt="Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, விஷ்ணு குமார், விஷ்ணுபீடியா"  class="gallery-item">
     
 </div> 
 
 
     <div id="popup" class="popup">
         <div class="popup-content">
-            <span id="close-btn" class="close-btn"><center>&nbsp; CLOSE &nbsp;</center> </span>
+            <span id="close-btn" class="close-btn"><center>&nbsp; பின்செல் &nbsp;</center> </span>
             <img id="popup-img" class="popup-img" src="" alt="Full View">
         </div>
     </div>
-
-
-
-
+    <br>
 <br>
 <br>
+</div>
+
+<div id="VIDEOS" class="tabcontent">
+&nbsp;&nbsp;&nbsp;<img class="TABICON" src="TABS/VIDEOS.gif" draggable="false" width="140px" height="140px" style="float: left;"> <img class="TABICON" src="TABS/VIDEOS.gif" draggable="false" width="140px" height="140px" style="float: right; transform: rotateY(180deg);">&nbsp;&nbsp;&nbsp;<br><br><br>
+&nbsp;&nbsp;<center><h class="h11"><b>&nbsp;என் &nbsp;காணொளிகள்&nbsp;</b></h></center>&nbsp;&nbsp;
 <br>
+
+<center>
+  <div class="subtabs">
+    <button class="subtablink active" onclick="openSubTab(event, 'Comedy')">நகைச்சுவை</button>
+    <button class="subtablink" onclick="openSubTab(event, 'Myself')">நான்</button>
+    <button class="subtablink" onclick="openSubTab(event, 'Family')">குடும்பம்</button>
+    <button class="subtablink" onclick="openSubTab(event, 'Educational')">கல்வி</button>
+    <button class="subtablink" onclick="openSubTab(event, 'Travel')">பயணம்</button>
+  </div>
+</center>
+
+<div id="Comedy" class="subtabcontent" >
+<div class="gallery-v">
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/pYmZHzD292I?enablejsapi=1" title="Maan Karate Comedy Sivakarthikeyan Soori | #tamil #comedy #jokes #fun #laugh #tamilmovie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/n_6cGbeFsWo?enablejsapi=1" title="Vadivelu Comedy  Aadhavan Movie | #vadivelucomedy #tamil #vadivelu #comedy #fun #jokes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/S0lnQvdSSRo?enablejsapi=1" title="Santhanam Comedy  Dhilluku Dhuddu 2 | #santhanam #comedy #tamil #fun #friends #joke #entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/66Md-Rht5hk?enablejsapi=1" title="Vadivelu Kili Comedy | மனித கிளி ஜோசியம் #tamil #comedy #fun #friends #laugh #entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/fNMX9ssa2Bs?enablejsapi=1" title="Gopi Sudhakar Comedy Recreation | Parithabangal  #tamil #comedy #funny #gopisudhakar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/ep1eCHb6nkY?enablejsapi=1" title="Tamil College Comedy  | #comedy #tamil #college #fun #coimbatore #trending" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/tPqqdA9cQLI?enablejsapi=1" title="Vadivelu Comedy Sandaiku Vada | #vadivelucomedy #vadivelu #comedy #tamilcomedy #friends #fun #funny" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/Dst6H3ydxUc?enablejsapi=1" title="Santhanam Comedy A1| #tamil #tamilcomedy #a1 #friends #comedy #entertainment #funny #fun #laugh #wow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/MkmdX-aHN0M?enablejsapi=1" title="Vadivelu Mayilsamy Comedy| #happy #funny #entertainment #friends #oldmemories #tamil #comedy #covai" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/PKAr6TxdsaA?enablejsapi=1" title="Darling Comedy | #darling #tamilcomedy #tamil #karunas #gvprakash #coimbatore #friends #funny #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/utFxNV9HLAI?enablejsapi=1" title="Santhanam Comedy| #tamilcomedy #santhanamcomedy #comedy #fun #entertainment #friends #tamil #happy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/oHCrr72pK5w?enablejsapi=1" title="Vadivelu Comedy | #comedy #happy #tamilcomedy #friends #coimbatore #actor #acting #funny #fun #jolly" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/0q23B-zsiAE?enablejsapi=1" title="Vadivel Comedy_Full Pant | #happy #comedy #tamilcomedy #friends #funny #vadivelu #acting #actor #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/JjxfJBSvUls?enablejsapi=1" title="Goundamani Senthil Comedy  |#comedy #tamilcomedy #funny #happy #friends #acting #actor #tamil #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/DBr-e3sKRzI?enablejsapi=1" title="Tamil Comedy | #comedy #tamilcomedy #happy #funny #friends #acting #fun  #memories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/h1f9YgMcaxc?enablejsapi=1" title="Goundamani Senthil Comedy | #comedy #tamilcomedy #happy #friends #funny #memories #trending #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/veyVr0Jqgd8?enablejsapi=1" title="Vadivel Comedy  | #happy #tamilcomedy #comedy #indiancomedy #funny #friends #fun #acting #memories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/QdbybNSM6qI?enablejsapi=1" title="Siva Karthikeyan and Soori Comedy  | #happy #comedy #friends #funny #memories #tamil #tamilcomedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/6HwGNHb95d8?enablejsapi=1" title="Santhanam Comedy | #santhanam #happy #comedy #friends #funny #fun #tamil #memories #oldisgold #wow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/Bo8aPyOd1e0?enablejsapi=1" title="Goundamani and Senthil Comedy || #tamil #comedy #funny #friends #coimbatore #boys #shorts #happy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/tULzcdW3Mug?enablejsapi=1" title="Kumki Comedy| #tamilcomedy #tamil #friends #memories #funny #comedy #entertainment #acting #fun #lol" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/mMOT-u2xXU4?enablejsapi=1" title="Mottai Rajendran Comedy Ghost Gopal Varma | #comedy #tamil #movie #fun #friends #entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/1gxgmSteMck?enablejsapi=1" title="Vadivelu Comedy Sachein Movie | #tamil #comedy #joke #smile #laugh #vijay #vadivelu #movie #friends" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/Ya2nlL_Y0_I?enablejsapi=1" title="Soori Comedy  Sivakarthikeyan| Varuthapadatha Valibar Sangam #tamil #movie #comedy #joke #friends" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/SFj32iK52PI?enablejsapi=1" title="Santhanam Comedy | Oru Kal Oru Kannadi Movie | #tamil #tamilcomedy #comedy #santhanam #jokes #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+<div id="Travel" class="subtabcontent" style="display:none">
+<div class="gallery-v">
+<iframe class="gallery-video" src="https://www.youtube.com/embed/39TsT7zaJS8?enablejsapi=1" title="Gass Forest Museum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen > </iframe>
+<iframe class="gallery-video" src="https://www.youtube.com/embed/2D1t93gG79M?enablejsapi=1" title="Gedee Car Museum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe  class="gallery-video" src="https://www.youtube.com/embed/GKW-YX_r-VI?enablejsapi=1" title="Catherine Water Falls - Trekking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video" src="https://www.youtube.com/embed/4BBTmpdUJpc?enablejsapi=1" title="Malampuzha Backwater Drive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video" src="https://www.youtube.com/embed/BaELpzVBrGk?enablejsapi=1" title="Pollachi to Monkey Falls Drive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="gallery-v">
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/8_I2c_Q1d3k?enablejsapi=1" title="Catherine Waterfalls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/7w28ik8OeXs?enablejsapi=1" title="Beautiful Nature and its Peace  |  #kerala #coimbatore #nature #peace #beauty #love" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/b4e0EHmQCGc?enablejsapi=1" title="Misty Kothagiri-Kodanaadu| #misty #peace #titanic #love #happy #hills #beautiful #tamil #wonderful" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/y6iLwcauJaE?enablejsapi=1" title="Peaceful Nature Walk_Kothagiri| #walkthrough #nature #love #titanic #kothagiri #peace #happy #travel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/jb6diAnl-ck?enablejsapi=1" title="Kiliyur Falls SlowMo| #nature #naturelovers #waterfall #yercaud #laugh #slowmotion #beautiful #funny" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/aivASAayIqg?enablejsapi=1" title="Beautiful River from Kerala and happy times in nature | #nature #kerala #coimbatore #peace #river" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/iDBoFHdTiCo?enablejsapi=1" title="Beautiful Scenery from Kerala and Mesmerizing Weather || அழகிய கேரளா || Kerala, India" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/sEjxll8CoP4?enablejsapi=1" title="Mesmerizing Valparai&#39;s Beauty |மெய் மயக்கும் வால்பாறையின் அழகு| #nature #happy #beautiful #peace" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/QowBDAYSSFI?enablejsapi=1" title="Kovai Kutralam|அழகிய கோவை குற்றாலம் நீர்வீழ்ச்சி | #nature #naturelovers #waterfall #wonderful" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/9lt31gsojxQ?enablejsapi=1" title="Kovai Kutralam  #coimbatore #happy #nature #waterfall #peace #amazing #meditation #mahabharatham" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/fuig4sYwA_E?enablejsapi=1" title="Coimbatore to Athirapally Bike Drive | #nature #driving #travel #kerala #waterfall #happy #adventure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/086PjMpzN-w?enablejsapi=1" title="Deep Forest_Kovai Kutralam | #happy #travel #travelvlog #coimbatore #waterfall #nature #naturelovers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/Qx1DdLtdh84?enablejsapi=1" title="Kovai Kutralam Forest Drive| #coimbatorian #travel #travelvlog #forest #nature #love #beautiful #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/MFcrYVjNSxg?enablejsapi=1" title="Catherine Waterfalls SlowMo| #wanderlust #nature #love #beautiful #waterfall #happy #tamil #memories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/nWqpfI4jFd4?enablejsapi=1" title="Triple HHH WWE Bgm| #wwe #tripleh #bgm #entertainment #nature #funny #river #mountains #travel #vlog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/iJSs0ErSpDs?enablejsapi=1" title="Randy Orton &amp; Edge WWE | #wwe #randyorton #edge #spear #finisher #entertainment #beach #friends #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/UpkV_YOK-Iw?enablejsapi=1" title="Beautiful River - Slomo| #relaxing #slomo #river #jump #nature #beautiful #pollachi #coimbatore #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/s8KoJ0WuhXI?enablejsapi=1" title="Gedee Car Museum - Cars Love - Coimbatore #museum #coimbatore #tourism #cars #love" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/ZizX_XS3Stk?enablejsapi=1" title="Gass Forest Museum - Coimbatore Tourist Place #coimbatore #museum #vlog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/sutM16x-Et0?enablejsapi=1" title="Gass Forest Museum - Coimbatore Tourist Place #coimbatore #museum #excitement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/jjU3J6SXk8Q?enablejsapi=1" title="Coimbatore&#39;s Beauty During Rainfall  | Nature Sounds #coimbatore #nature #rain #beautiful" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/WPuM2bdq17w?enablejsapi=1" title="Nellithurai River And Forest Drive | Coimbatore Nature Spot #coimbatore #nature #love #happiness" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/Ve3cVdZEP4c?enablejsapi=1" title="Vadanapally Beach Sunset, Thrissur, Kerala | #nature #sunset #kerala #beauty #travelvlog #india" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<div id="Family" class="subtabcontent" style="display:none">
+<div class="gallery-v">
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/o9ulTXatWlU?enablejsapi=1" title="Naattu Koothu | #family #friends #funny #dance #acting#entertainment #happy #memories @dulifestyle05" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/wITIViF6f2E?enablejsapi=1" title="Lovely Daughter&#39;s Cute Smile | அன்பு மகளின் இனிய சிரிப்பு!... #smile #happy #daughterlove" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/TLSN4TzTIS0?enablejsapi=1" title="Memories Bring Back| #friends #oldisgold #oldmemories #memories #friendship #trend #maroon5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/J8jbOzysA6s?enablejsapi=1" title="Puppy Comedy | #comedy #tamilcomedy #happy #funny #petlover #puppy #entertainment #interesting #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/Ww5u61KHJ9I?enablejsapi=1" title="Playing with Puppy | #kurumba #happy #happiness #pets #puppy #entertainment #fun #funny #play #tamil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/ltpcFvSbjf8?enablejsapi=1" title="Puppy Training | #puppy #training #cute #pets #labrador  #friends #dog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<div id="Myself" class="subtabcontent" style="display:none">
+<div class="gallery-v">
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/QsWpPGz4loM?enablejsapi=1" title="Vijay Joseph Style | #acting #style #happy #happiness #model #entertainment #cinema #trending #fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/HHhUj1Z074I?enablejsapi=1" title="Small Bike Cornering  || இருசக்கர வாகன பிரியம்  #bikelover #kerala  #nature #happy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/laZheYnX2lI?enablejsapi=1" title="Beautiful Waves of Vadanapally Beach, Kerala  || #happy #nature #sea #beach #india #kgf #heroic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/Z0hEpEnYvO0?enablejsapi=1" title="Bike Driving_Cornering | #happy #bikelover #bike #style #happiness #modeling #kollywood #coimbatore" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/-3G6od9fdtg?enablejsapi=1" title="Vada Chennai bgm  | #actor #acting #style #trending #tamil #heroic #beach #kerala  #entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="gallery-video-s" src="https://www.youtube.com/embed/oIB28_VxfkA?enablejsapi=1" title="Mutha Mazhai Song - Dhee Version | Impacting the Heart #thuglife #love #pain #melody  #trending" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>    
+</div>
+
+<div id="Educational" class="subtabcontent" style="display:none">
+<div class="gallery-v">
+<br>
+<p>விரைவில்</p>
+<br>
+</div>    
+</div>
 
 
 
@@ -410,7 +557,7 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 </div>        
 
 <div class="center-content">
-<center><img class="FLOGOIMG" src="LOGO/VISHNUPEDIA LOGO.png" draggable="false" width="500" height="250" style="box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.5); display: block;"/></center>
+<center><img class="FLOGOIMG" src="LOGO/VISHNUPEDIA LOGO.png" alt="RVK, Raj. Vishnu Kumar, RVK Adventurer, Vishnupedia, Vishnu Kumar, விஷ்ணு குமார், விஷ்ணுபீடியா" draggable="false" width="500" height="250" style="box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.5); display: block;"/></center>
 </div>
 
 <div class="right-content">  
@@ -422,8 +569,6 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 <li style="display: inline-block; margin-right: 10px;"> <a href="mailto:vishnupedia1999@gmail.com"> <img class="CONIMG" src="SOCIAL MEDIA/MAIL.gif" width="75" height="75" alt="EMAIL"> </a> </li>
 &nbsp;
 <li style="display: inline-block; margin-right: 10px;"> <a href="https://www.linkedin.com/in/rvkadventurer1221/"> <img class="CONIMG" src="SOCIAL MEDIA/LINKEDIN.gif" width="75" height="75" alt="LINKEDIN"> </a> </li>
-&nbsp;
-<li style="display: inline-block; margin-right: 10px;"> <a href="https://www.instagram.com/rvk_cyclist_adventurer_lovedog/?hl=en"> <img class="CONIMG" src="SOCIAL MEDIA/INSTAGRAM.gif" width="75" height="75" alt="INSTAGRAM"> </a> </li>
 &nbsp;
 <li style="display: inline-block; margin-right: 10px;"> <a href="https://m.facebook.com/profile.php?eav=AfaXkPNZkofAnD_7vEQzmJkzrhno69WrpxTdpJslfbg7rVHL2r0tpUcAbvwDhDP5hf8&paipv=0"> <img class="CONIMG" src="SOCIAL MEDIA/FACEBOOK.gif" width="75" height="75" alt="FACEBOOK"> </a> </li>
 &nbsp;
@@ -446,7 +591,7 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 </footer>
 
 <footer id="footer-layer-3">
-<center><p class="p4"> காப்புரிமை &copy; விஷ்ணுபீடியா, 1999 முதல் <br> அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை  </p>
+<center><p class="p4"> காப்புரிமை &copy; விஷ்ணுபீடியா, 1999 முதல் <br> அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை </p>
 <br>
 <br>
 <a href="https://forms.office.com/r/SjdtjtEmj7" class="feedback-button">கருத்து படிவம்</a>
@@ -455,9 +600,59 @@ p9 { font-size: 12px; color: #ffffff; margin: 0;}
 
 
 
+<script>  // TABS RESPONSE //
+    function openPage(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+     
+    // Hide all tab contents
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+     
+    // Show the selected tab content
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+     
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+     
+    // Get the element with id="defaultOpen" and click on it
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("defaultOpen").click();
+    });
+    </script>
+
+   
+
+<script>// SUB-TABS RESPONSE //
+function openSubTab(evt, subtabName) {
+  var i, content, tablinks;
+  content = document.getElementsByClassName("subtabcontent");
+  for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("subtablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  document.getElementById(subtabName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+
+// Default: Show Travel tab on page load
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("Comedy").style.display = "block";
+});
+</script>
 
 
-<script>
+
+
+<script>// IMAGE ENLARGEMENT CONTROL //
 document.addEventListener('DOMContentLoaded', () => {
 const galleryItems = document.querySelectorAll('.gallery-item');
 const popup = document.getElementById('popup');
@@ -485,8 +680,53 @@ document.body.style.overflow = ''; // Restore background scroll
 });
 });
 </script>
-  
 
+
+<script> // YOUTUBE VIDEO PLAYING CONTROL //
+let players = [];
+
+  function onYouTubeIframeAPIReady() {
+    const iframes = document.querySelectorAll('iframe.gallery-video, iframe.gallery-video-s');
+    
+    iframes.forEach((iframe, index) => {
+      // Create a new YT.Player object for each iframe
+      players[index] = new YT.Player(iframe, {
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+              // Pause all other players
+              players.forEach((p, i) => {
+                if (i !== index && p && p.pauseVideo) {
+                  p.pauseVideo();
+                }
+              });
+            }
+          }
+        }
+      });
+    });
+  }
+
+  // Load the YouTube Iframe API
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.head.appendChild(tag);
+</script>
+
+
+<script> // YOUTUBE VIDEO LOADING DELAY ENHANCEMENT //
+  document.addEventListener("DOMContentLoaded", function () {
+    // Add loading="lazy" to all images
+    document.querySelectorAll('img:not([loading])').forEach(img => {
+      img.setAttribute('loading', 'lazy');
+    });
+
+    // Add loading="lazy" to all iframes
+    document.querySelectorAll('iframe:not([loading])').forEach(iframe => {
+      iframe.setAttribute('loading', 'lazy');
+    });
+  });
+</script>
 
 
 
